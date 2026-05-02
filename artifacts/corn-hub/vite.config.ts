@@ -30,7 +30,7 @@ export default defineConfig(async () => {
     plugins: [...devPlugins],
     root: path.resolve(import.meta.dirname),
     build: {
-      outDir: path.resolve(import.meta.dirname, "dist"),
+      outDir: path.resolve(import.meta.dirname, "../../site"),
       emptyOutDir: true,
     },
     server: {
