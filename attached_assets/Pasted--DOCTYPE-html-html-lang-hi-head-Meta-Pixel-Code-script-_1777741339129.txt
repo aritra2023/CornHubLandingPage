@@ -1,0 +1,791 @@
+
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1647926739857378'); 
+  fbq('track', 'PageView');
+</script><noscript> 
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1647926739857378&ev=PageView&noscript=1"/>
+</noscript>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+<title>VideoHub — Premium Adult Video Bundle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+/* ─── CONFIG ─────────────────────────────── */
+:root {
+  --upi-id: paytm.s1wc4se@pty;
+  --upi-name: VideoHub;
+  --accent: #c026d3;
+  --accent2: #7c3aed;
+  --gold: #f59e0b;
+  --bg: #07070f;
+  --card: #0f0e1a;
+  --card2: #13122080;
+  --border: #2a2848;
+  --text: #f0eeff;
+  --muted: #9090b0;
+  --r: 18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+
+/* ─── NOISE TEXTURE ──────────────────────── */
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:.5}
+
+/* ─── GLOW ORBS ──────────────────────────── */
+.orb{position:fixed;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+.orb1{width:400px;height:400px;background:rgba(124,58,237,.15);top:-100px;left:-100px}
+.orb2{width:350px;height:350px;background:rgba(192,38,211,.12);bottom:10%;right:-100px}
+.orb3{width:250px;height:250px;background:rgba(245,158,11,.08);top:50%;left:50%;transform:translate(-50%,-50%)}
+
+/* ─── LAYOUT ─────────────────────────────── */
+.wrap{position:relative;z-index:1;max-width:480px;margin:0 auto;padding:0 16px}
+
+/* ─── HEADER / NAV ───────────────────────── */
+nav{position:sticky;top:0;z-index:50;background:rgba(7,7,15,.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(42,40,72,.6);padding:12px 0}
+.nav-inner{max-width:480px;margin:0 auto;padding:0 16px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:2px;background:linear-gradient(135deg,#e879f9,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.logo span{-webkit-text-fill-color:#f59e0b}
+.nav-stats{display:flex;gap:12px}
+.stat-pill{background:rgba(42,40,72,.8);border:1px solid var(--border);border-radius:30px;padding:4px 12px;font-size:11px;color:var(--muted);display:flex;align-items:center;gap:5px}
+.stat-pill .dot-live{width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 6px #22c55e;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* ─── HERO ───────────────────────────────── */
+.hero{padding:32px 0 20px;text-align:center}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:6px;background:rgba(192,38,211,.1);border:1px solid rgba(192,38,211,.3);border-radius:30px;padding:5px 14px;font-size:12px;color:#e879f9;margin-bottom:16px;font-weight:600;letter-spacing:.5px}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1;letter-spacing:2px;margin-bottom:10px}
+.hero h1 span{background:linear-gradient(135deg,#c026d3,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:20px}
+.trust-row{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--muted)}
+.trust-item svg{width:14px;height:14px;fill:#22c55e}
+
+/* ─── COUNTER BAR ────────────────────────── */
+.counter-bar{background:linear-gradient(90deg,rgba(124,58,237,.15),rgba(192,38,211,.15));border:1px solid rgba(192,38,211,.2);border-radius:12px;padding:12px 16px;display:flex;justify-content:space-around;margin:16px 0 28px;gap:8px}
+.c-item{text-align:center}
+.c-num{font-family:'Bebas Neue',sans-serif;font-size:28px;color:#fff;letter-spacing:1px}
+.c-label{font-size:11px;color:var(--muted)}
+
+/* ─── PLAN SECTION ───────────────────────── */
+.section-label{font-size:13px;font-weight:700;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;text-align:center}
+.plans{display:flex;flex-direction:column;gap:16px;margin-bottom:40px}
+
+.plan-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);padding:22px 20px 18px;cursor:pointer;position:relative;overflow:hidden;transition:transform .2s,border-color .2s,box-shadow .2s}
+.plan-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(124,58,237,.04),rgba(192,38,211,.04));opacity:0;transition:opacity .2s}
+.plan-card:hover{transform:translateY(-2px);border-color:#7c3aed;box-shadow:0 8px 32px rgba(124,58,237,.2)}
+.plan-card:hover::before{opacity:1}
+.plan-card.hot{border-color:var(--accent)}
+.plan-card.hot:hover{box-shadow:0 8px 32px rgba(192,38,211,.25)}
+.recommended-badge{position:absolute;top:0;right:20px;background:linear-gradient(135deg,#c026d3,#7c3aed);color:#fff;font-size:10px;font-weight:800;padding:4px 12px;border-radius:0 0 10px 10px;letter-spacing:1px}
+.bestseller-badge{position:absolute;top:12px;left:-28px;background:var(--gold);color:#000;font-size:9px;font-weight:800;padding:4px 36px;transform:rotate(-35deg);letter-spacing:1px}
+
+.plan-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:12px}
+.plan-icon-wrap{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.icon-basic{background:rgba(99,102,241,.15)}
+.icon-ult{background:rgba(245,158,11,.15)}
+.icon-exc{background:rgba(192,38,211,.15)}
+.plan-save{background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.25);color:#4ade80;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px}
+
+.plan-name{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1.5px;color:#fff;margin-bottom:2px}
+.plan-price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:16px}
+.plan-price{font-family:'Bebas Neue',sans-serif;font-size:44px;letter-spacing:1px;color:#fff}
+.plan-price-old{font-size:15px;color:#555;text-decoration:line-through}
+.plan-period{font-size:12px;color:var(--muted);margin-left:-6px}
+
+.features{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:20px}
+.features li{display:flex;align-items:center;gap:10px;font-size:13.5px;color:#c8c4e0}
+.feat-check{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:10px}
+.check-purple{background:rgba(124,58,237,.2);color:#a78bfa}
+.check-gold{background:rgba(245,158,11,.2);color:#fbbf24}
+.check-pink{background:rgba(192,38,211,.2);color:#e879f9}
+
+.plan-btn{display:block;width:100%;padding:15px;border-radius:12px;font-size:14px;font-weight:700;letter-spacing:1px;cursor:pointer;border:none;transition:transform .15s,opacity .2s;font-family:'Outfit',sans-serif}
+.btn-ghost{background:transparent;border:1.5px solid rgba(124,58,237,.4);color:#a78bfa}
+.btn-ghost:hover{background:rgba(124,58,237,.08)}
+.btn-gradient{background:linear-gradient(135deg,#c026d3,#7c3aed);color:#fff;box-shadow:0 4px 20px rgba(192,38,211,.35)}
+.btn-gradient:hover{transform:scale(1.02);opacity:.95}
+.btn-gold{background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;box-shadow:0 4px 20px rgba(245,158,11,.3)}
+.btn-gold:hover{transform:scale(1.02)}
+
+/* ─── MOST POPULAR STRIP ─────────────────── */
+.popular-strip{text-align:center;margin-bottom:10px}
+.popular-badge{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(90deg,rgba(192,38,211,.2),rgba(124,58,237,.2));border:1px solid rgba(192,38,211,.4);border-radius:30px;padding:5px 14px;font-size:12px;font-weight:700;color:#e879f9}
+
+/* ─── DELIVERY GUARANTEE ─────────────────── */
+.guarantee-box{background:rgba(34,197,94,.05);border:1px solid rgba(34,197,94,.2);border-radius:14px;padding:16px;display:flex;align-items:center;gap:14px;margin-bottom:36px}
+.g-icon{font-size:28px;flex-shrink:0}
+.g-text h4{font-size:14px;font-weight:700;color:#4ade80;margin-bottom:3px}
+.g-text p{font-size:12px;color:var(--muted);line-height:1.5}
+
+/* ─── REVIEWS ─────────────────────────────── */
+.reviews-section{margin-bottom:40px}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1.5px;text-align:center;margin-bottom:6px}
+.section-title span{background:linear-gradient(135deg,#c026d3,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.rating-summary{text-align:center;margin-bottom:24px}
+.big-rating{font-family:'Bebas Neue',sans-serif;font-size:56px;color:#f59e0b;line-height:1}
+.stars-row{display:flex;justify-content:center;gap:3px;margin:4px 0}
+.star{color:#f59e0b;font-size:18px}
+.rating-count{font-size:12px;color:var(--muted)}
+
+.reviews-grid{display:flex;flex-direction:column;gap:14px}
+.review-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
+.rv-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.rv-user{display:flex;align-items:center;gap:10px}
+.rv-avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0}
+.rv-name{font-size:14px;font-weight:600}
+.rv-date{font-size:11px;color:var(--muted)}
+.rv-stars{display:flex;gap:2px}
+.rv-star{color:#f59e0b;font-size:13px}
+.rv-plan-tag{display:inline-block;background:rgba(192,38,211,.1);border:1px solid rgba(192,38,211,.25);color:#d946ef;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px}
+.rv-text{font-size:13px;color:#b0aac8;line-height:1.6}
+.rv-verified{font-size:11px;color:#4ade80;display:flex;align-items:center;gap:4px;margin-top:8px}
+
+/* ─── FAQ ─────────────────────────────────── */
+.faq-section{margin-bottom:40px}
+.faq-item{border-bottom:1px solid var(--border);padding:14px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:600;color:var(--text)}
+.faq-icon{font-size:18px;color:var(--accent);transition:transform .2s;flex-shrink:0}
+.faq-a{font-size:13px;color:var(--muted);line-height:1.6;max-height:0;overflow:hidden;transition:max-height .3s,padding .3s}
+.faq-item.open .faq-a{max-height:200px;padding-top:10px}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+
+/* ─── FOOTER ─────────────────────────────── */
+footer{border-top:1px solid var(--border);padding:24px 16px;text-align:center;font-size:12px;color:var(--muted);max-width:480px;margin:0 auto}
+footer strong{color:var(--text)}
+
+/* ─── OVERLAY ─────────────────────────────── */
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:100;overflow-y:auto;padding:20px 16px 40px;-webkit-overflow-scrolling:touch}
+.overlay.show{display:block}
+.modal{background:var(--card);border:1.5px solid var(--border);border-radius:22px;padding:26px 20px 24px;max-width:430px;margin:0 auto;position:relative}
+.modal-close{position:absolute;top:16px;right:16px;background:rgba(255,255,255,.06);border:none;color:var(--muted);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center}
+.modal-close:hover{background:rgba(255,255,255,.12)}
+.modal-plan-tag{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(90deg,rgba(192,38,211,.15),rgba(124,58,237,.15));border:1px solid rgba(192,38,211,.3);border-radius:30px;padding:4px 14px;font-size:12px;font-weight:700;color:#e879f9;margin-bottom:14px}
+.modal h2{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;margin-bottom:4px}
+.modal .modal-sub{font-size:13px;color:var(--muted);margin-bottom:22px;line-height:1.5}
+
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.8px;text-transform:uppercase;margin-bottom:7px}
+.form-group input{width:100%;background:#0d0c1a;border:1.5px solid var(--border);border-radius:10px;color:var(--text);font-size:14px;font-family:'Outfit',sans-serif;padding:12px 14px;outline:none;transition:border-color .2s}
+.form-group input:focus{border-color:var(--accent2)}
+.form-group input::placeholder{color:#4a4870}
+
+.cta-btn{display:block;width:100%;padding:15px;border-radius:12px;font-size:15px;font-weight:800;letter-spacing:.8px;cursor:pointer;border:none;font-family:'Outfit',sans-serif;transition:transform .15s,box-shadow .2s;margin-top:6px}
+.cta-gradient{background:linear-gradient(135deg,#c026d3,#7c3aed);color:#fff;box-shadow:0 4px 24px rgba(192,38,211,.35)}
+.cta-gradient:hover{transform:scale(1.02);box-shadow:0 6px 30px rgba(192,38,211,.45)}
+
+/* QR Screen */
+.qr-screen{display:none}
+.qr-screen.show{display:block}
+.detail-screen{display:block}
+.detail-screen.hide{display:none}
+
+.timer-wrap{background:rgba(192,38,211,.06);border:1px solid rgba(192,38,211,.2);border-radius:12px;padding:12px;text-align:center;margin:16px 0}
+.timer-val{font-family:'Bebas Neue',sans-serif;font-size:42px;color:#e879f9;letter-spacing:2px;line-height:1}
+.timer-lbl{font-size:11px;color:var(--muted);margin-top:4px}
+.timer-exp{color:#ef4444!important}
+
+.qr-box{text-align:center;margin:16px 0}
+.qr-img{width:200px;height:200px;border-radius:14px;border:3px solid var(--accent2);display:block;margin:0 auto;background:#fff}
+.upi-id-row{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:10px}
+.upi-id-text{font-size:13px;color:#a78bfa;font-weight:600;font-family:monospace}
+.copy-btn{background:rgba(124,58,237,.15);border:1px solid rgba(124,58,237,.3);color:#a78bfa;border-radius:8px;padding:4px 10px;font-size:11px;font-weight:700;cursor:pointer;transition:background .15s}
+.copy-btn:hover{background:rgba(124,58,237,.25)}
+.copy-btn.copied{color:#4ade80;border-color:rgba(34,197,94,.3);background:rgba(34,197,94,.08)}
+
+.qr-actions{display:flex;gap:10px;margin:12px 0}
+.qr-action-btn{flex:1;background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--muted);border-radius:10px;padding:10px;font-size:12px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;font-family:'Outfit',sans-serif;transition:background .15s,border-color .15s}
+.qr-action-btn:hover{background:rgba(255,255,255,.08);border-color:#7c3aed;color:#a78bfa}
+
+.pay-methods{margin:14px 0}
+.pay-label{font-size:11px;color:var(--muted);letter-spacing:.8px;text-transform:uppercase;font-weight:700;text-align:center;margin-bottom:10px}
+.pay-btns{display:flex;gap:10px}
+.pay-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px;border-radius:11px;font-size:14px;font-weight:700;cursor:pointer;border:none;font-family:'Outfit',sans-serif;transition:transform .15s,opacity .2s;text-decoration:none}
+.paytm-btn{background:#002970;color:#fff}
+.paytm-btn:hover{transform:scale(1.02)}
+.phonepe-btn{background:#5f259f;color:#fff}
+.phonepe-btn:hover{transform:scale(1.02)}
+.pay-btn-logo{width:22px;height:22px;border-radius:5px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900}
+.paytm-logo{color:#002970}
+.phonepe-logo{color:#5f259f}
+
+.divider{display:flex;align-items:center;gap:10px;margin:16px 0;color:var(--muted);font-size:12px}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--border)}
+
+.utr-section{margin-top:4px}
+.utr-note{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:12px;padding:10px;background:rgba(245,158,11,.05);border:1px solid rgba(245,158,11,.15);border-radius:8px}
+
+/* SUCCESS */
+.success-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:200;align-items:center;justify-content:center;padding:20px}
+.success-overlay.show{display:flex}
+.success-card{background:var(--card);border:2px solid rgba(192,38,211,.4);border-radius:24px;padding:40px 24px;text-align:center;max-width:360px;width:100%;animation:popIn .4s cubic-bezier(.34,1.56,.64,1)}
+@keyframes popIn{from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1}}
+.success-emoji{font-size:64px;margin-bottom:16px;display:block}
+.success-card h2{font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:1.5px;margin-bottom:8px}
+.success-card p{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:20px}
+.success-email-hl{color:#e879f9;font-weight:700}
+.back-btn{display:block;width:100%;padding:14px;border-radius:12px;background:linear-gradient(135deg,#c026d3,#7c3aed);color:#fff;font-size:14px;font-weight:800;letter-spacing:.8px;cursor:pointer;border:none;font-family:'Outfit',sans-serif}
+
+/* ─── TOAST ──────────────────────────────── */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:#1a1930;border:1px solid var(--border);border-radius:30px;padding:10px 20px;font-size:13px;color:var(--text);opacity:0;transition:opacity .3s,transform .3s;z-index:300;white-space:nowrap;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">Video<span>Hub</span></div>
+    <div class="nav-stats">
+      <div class="stat-pill"><span class="dot-live"></span><span id="viewCount">1,284</span> Online</div>
+      <div class="stat-pill">🔒 Secure</div>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-eyebrow">🔥 Biggest Sale of 2025</div>
+    <h1>Adult Video<br/><span>Bundle Pack</span></h1>
+    <p class="hero-sub">India's #1 Private Adult Content Platform.<br/>Instant delivery directly to your email — 100% confidential.</p>
+    <div class="trust-row">
+      <div class="trust-item"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg> 100% Private</div>
+      <div class="trust-item"><svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg> Instant Delivery</div>
+      <div class="trust-item"><svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Lifetime Access</div>
+    </div>
+  </div>
+
+  <!-- counter bar -->
+  <div class="counter-bar">
+    <div class="c-item"><div class="c-num" id="purCount">58,420</div><div class="c-label">Happy Buyers</div></div>
+    <div class="c-item"><div class="c-num">60K+</div><div class="c-label">Videos</div></div>
+    <div class="c-item"><div class="c-num" id="todayBuy">347</div><div class="c-label">Today's Sales</div></div>
+  </div>
+
+  <!-- ── PLANS ── -->
+  <div class="section-label">Choose Your Plan</div>
+  <div class="plans">
+
+    <!-- PREMIUM -->
+    <div class="plan-card" onclick="openCheckout('Premium','299')">
+      <div class="plan-top">
+        <div class="plan-icon-wrap icon-basic">🎬</div>
+        <div class="plan-save">88% OFF</div>
+      </div>
+      <div class="plan-name">PREMIUM</div>
+      <div class="plan-price-row">
+        <div class="plan-price">₹299</div>
+        <div class="plan-price-old">₹2,499</div>
+        <div class="plan-period">/ lifetime</div>
+      </div>
+      <ul class="features">
+        <li><span class="feat-check check-purple">✓</span>20,000+ Videos 🎥</li>
+        <li><span class="feat-check check-purple">✓</span>HD Quality Content</li>
+        <li><span class="feat-check check-purple">✓</span>Instant Download 🚀</li>
+        <li><span class="feat-check check-purple">✓</span>Lifetime Access ∞</li>
+        <li><span class="feat-check check-purple">✓</span>Regular Updates</li>
+      </ul>
+      <button class="plan-btn btn-ghost">ACCESS NOW →</button>
+    </div>
+
+    <!-- ULTIMATE -->
+    <div class="plan-card" onclick="openCheckout('Ultimate','399')">
+      <div class="plan-top">
+        <div class="plan-icon-wrap icon-ult">👑</div>
+        <div class="plan-save">84% OFF</div>
+      </div>
+      <div class="plan-name">ULTIMATE</div>
+      <div class="plan-price-row">
+        <div class="plan-price">₹399</div>
+        <div class="plan-price-old">₹2,499</div>
+        <div class="plan-period">/ lifetime</div>
+      </div>
+      <ul class="features">
+        <li><span class="feat-check check-gold">✓</span>40,000+ Videos 🔥</li>
+        <li><span class="feat-check check-gold">✓</span>Full HD Quality Content 📺</li>
+        <li><span class="feat-check check-gold">✓</span>Priority Support ⚡</li>
+        <li><span class="feat-check check-gold">✓</span>Exclusive Categories 💎</li>
+        <li><span class="feat-check check-gold">✓</span>Lifetime Access ∞</li>
+        <li><span class="feat-check check-gold">✓</span>Weekly New Content 📦</li>
+      </ul>
+      <button class="plan-btn btn-gradient">ACCESS NOW →</button>
+    </div>
+
+    <!-- EXCLUSIVE -->
+    <div class="popular-strip">
+      <div class="popular-badge">⭐ MOST POPULAR — Best Value</div>
+    </div>
+    <div class="plan-card hot" onclick="openCheckout('Exclusive','499')">
+      <div class="recommended-badge">FULL ACCESS</div>
+      <div class="bestseller-badge">BESTSELLER</div>
+      <div class="plan-top">
+        <div class="plan-icon-wrap icon-exc">💎</div>
+        <div class="plan-save">80% OFF</div>
+      </div>
+      <div class="plan-name">EXCLUSIVE</div>
+      <div class="plan-price-row">
+        <div class="plan-price">₹499</div>
+        <div class="plan-price-old">₹2,499</div>
+        <div class="plan-period">/ lifetime</div>
+      </div>
+      <ul class="features">
+        <li><span class="feat-check check-pink">✓</span>60,000+ Videos 🔞</li>
+        <li><span class="feat-check check-pink">✓</span>4K Ultra HD Quality ✨</li>
+        <li><span class="feat-check check-pink">✓</span>VIP Support 📞</li>
+        <li><span class="feat-check check-pink">✓</span>All Categories Unlocked 🔑</li>
+        <li><span class="feat-check check-pink">✓</span>Daily New Content Pack 🌶</li>
+        <li><span class="feat-check check-pink">✓</span>Bonus Content Pack 🎁</li>
+      </ul>
+      <button class="plan-btn btn-gold">GET FULL ACCESS →</button>
+    </div>
+  </div>
+
+  <!-- DELIVERY GUARANTEE -->
+  <div class="guarantee-box">
+    <div class="g-icon">📧</div>
+    <div class="g-text">
+      <h4>Instant Email Delivery</h4>
+      <p>Your bundle link is sent to your email within 2 minutes of payment. 100% automated &amp; private.</p>
+    </div>
+  </div>
+
+  <!-- ── REVIEWS ── -->
+  <div class="reviews-section">
+    <div class="section-title">What Our <span>Buyers Say</span></div>
+    <div class="rating-summary">
+      <div class="big-rating">4.9</div>
+      <div class="stars-row">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+      </div>
+      <div class="rating-count">Based on 2,847 reviews</div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="rv-top">
+          <div class="rv-user">
+            <div class="rv-avatar" style="background:rgba(192,38,211,.15);color:#e879f9">RS</div>
+            <div><div class="rv-name">Rahul S.</div><div class="rv-date">2 days ago · Delhi</div></div>
+          </div>
+          <div class="rv-stars"><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span></div>
+        </div>
+        <div class="rv-plan-tag">💎 EXCLUSIVE — ₹499</div>
+        <p class="rv-text">Bhai ekdum mast hai yaar! 499 wala plan liya aur life set hogayi. 60,000+ videos aur 4K quality — bilkul paisa vasool. Delivery 2 minute mein aayi email pe. 100% recommend karta hoon!</p>
+        <div class="rv-verified">✓ Verified Purchase</div>
+      </div>
+
+      <div class="review-card">
+        <div class="rv-top">
+          <div class="rv-user">
+            <div class="rv-avatar" style="background:rgba(245,158,11,.15);color:#fbbf24">AK</div>
+            <div><div class="rv-name">Ankit K.</div><div class="rv-date">5 days ago · Mumbai</div></div>
+          </div>
+          <div class="rv-stars"><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span></div>
+        </div>
+        <div class="rv-plan-tag">💎 EXCLUSIVE — ₹499</div>
+        <p class="rv-text">Maine pehle 299 wala liya tha, phir upgrade karke 499 wala liya. Difference bahut zyada hai! Daily naya content aata hai aur VIP support bhi available hai. Exclusive plan best deal hai.</p>
+        <div class="rv-verified">✓ Verified Purchase</div>
+      </div>
+
+      <div class="review-card">
+        <div class="rv-top">
+          <div class="rv-user">
+            <div class="rv-avatar" style="background:rgba(34,197,94,.12);color:#4ade80">VP</div>
+            <div><div class="rv-name">Vikram P.</div><div class="rv-date">1 week ago · Bangalore</div></div>
+          </div>
+          <div class="rv-stars"><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span></div>
+        </div>
+        <div class="rv-plan-tag">💎 EXCLUSIVE — ₹499</div>
+        <p class="rv-text">Trusted site hai. Mujhe darr tha ki scam hoga lekin ekdum legit hai. UPI se payment ki, UTR number diya aur turant link aa gaya. 499 mein itna content mil raha hai — unbelievable value!</p>
+        <div class="rv-verified">✓ Verified Purchase</div>
+      </div>
+
+      <div class="review-card">
+        <div class="rv-top">
+          <div class="rv-user">
+            <div class="rv-avatar" style="background:rgba(99,102,241,.15);color:#818cf8">MS</div>
+            <div><div class="rv-name">Mohit S.</div><div class="rv-date">1 week ago · Pune</div></div>
+          </div>
+          <div class="rv-stars"><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span></div>
+        </div>
+        <div class="rv-plan-tag">👑 ULTIMATE — ₹399</div>
+        <p class="rv-text">Ultimate plan liya hai. Weekly updates aate hain aur quality bahut achhi hai. Bhai sach mein maza aa gaya. Private delivery — ghar mein kisi ko pata bhi nahi chala 😄</p>
+        <div class="rv-verified">✓ Verified Purchase</div>
+      </div>
+
+      <div class="review-card" style="border-color:rgba(192,38,211,.3)">
+        <div class="rv-top">
+          <div class="rv-user">
+            <div class="rv-avatar" style="background:rgba(192,38,211,.15);color:#e879f9">NJ</div>
+            <div><div class="rv-name">Nikhil J.</div><div class="rv-date">2 weeks ago · Jaipur</div></div>
+          </div>
+          <div class="rv-stars"><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span><span class="rv-star">★</span></div>
+        </div>
+        <div class="rv-plan-tag">💎 EXCLUSIVE — ₹499</div>
+        <p class="rv-text">499 wala plan lelo yaar seriously. Bonus content pack alag se tha jo pata hi nahi tha. Bonus mein bhi 5000+ videos the! Ek baar kharido baar baar fayda. Full access sach mein FULL hai.</p>
+        <div class="rv-verified">✓ Verified Purchase</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FAQ ── -->
+  <div class="faq-section">
+    <div class="section-title" style="margin-bottom:20px">FAQ <span>Questions</span></div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Delivery kaise milti hai? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Payment complete hone ke baad aapke email pe automatically bundle link bhej diya jata hai. Usually 2 minutes ke andar deliver hoti hai.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Kya yeh safe aur private hai? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Bilkul! Hamare platform pe koi data store nahi hota. Email pe direct private link jata hai. Koi statement ya notification nahi aata.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Konsa plan best hai? <span class="faq-icon">+</span></div>
+      <div class="faq-a">499 wala Exclusive plan sabse best hai. 60,000+ videos, 4K quality, daily updates aur bonus pack — ek baar invest karo aur lifetime enjoy karo. Value for money sabse zyada yahi hai.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Kya refund milta hai? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Digital product hone ke kaaran refund nahi diya jata. Lekin hum guarantee dete hain ki aapko exactly woh milega jo describe kiya gaya hai.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">UTR number kahan milta hai? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Payment complete karne ke baad Paytm ya PhonePe app mein transaction history mein UTR/Reference number milega. Woh copy karke yahan paste karein.</div>
+    </div>
+  </div>
+
+  <footer>
+    <strong>VideoHub</strong> — Premium Adult Content Platform<br/>
+    <span style="font-size:11px">18+ only · All content is for adults · Private &amp; Confidential</span>
+  </footer>
+</div>
+
+<!-- ─── CHECKOUT OVERLAY ──────────────────── -->
+<div class="overlay" id="checkoutOverlay">
+  <div class="modal">
+    <button class="modal-close" onclick="closeCheckout()">✕</button>
+
+    <!-- DETAILS SCREEN -->
+    <div class="detail-screen" id="detailScreen">
+      <div class="modal-plan-tag" id="detailPlanTag">💎 EXCLUSIVE — ₹499</div>
+      <h2>Delivery Details</h2>
+      <p class="modal-sub">Enter your info — bundle link will be sent to your email instantly after payment ✉️</p>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="iName" placeholder="Apna naam likhein"/>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="iEmail" placeholder="yourname@gmail.com"/>
+      </div>
+      <div class="form-group">
+        <label>Mobile Number</label>
+        <input type="tel" id="iPhone" placeholder="10-digit number" maxlength="10"/>
+      </div>
+      <button class="cta-btn cta-gradient" onclick="proceedToPayment()">Continue to Pay →</button>
+    </div>
+
+    <!-- QR SCREEN -->
+    <div class="qr-screen" id="qrScreen">
+      <div class="modal-plan-tag" id="qrPlanTag">💎 EXCLUSIVE — ₹499</div>
+      <h2>Scan &amp; Pay</h2>
+      <p class="modal-sub">QR code scan karein ya niche buttons use karein. 5 minute mein payment complete karein.</p>
+
+      <div class="timer-wrap">
+        <div class="timer-val" id="timerVal">05:00</div>
+        <div class="timer-lbl">⏱ Time remaining — Jaldi payment karein!</div>
+      </div>
+
+      <div class="qr-box">
+        <img id="qrImg" src="" alt="QR Code" class="qr-img"/>
+        <div class="upi-id-row">
+          <span class="upi-id-text" id="upiDisplay">paytm.s1wc4se@pty</span>
+          <button class="copy-btn" id="copyUpiBtn" onclick="copyUPI()">Copy</button>
+        </div>
+        <div class="qr-actions">
+          <button class="qr-action-btn" onclick="downloadQR()">⬇ Save QR to Gallery</button>
+          <button class="qr-action-btn" onclick="copyUPI()">📋 Copy UPI ID</button>
+        </div>
+      </div>
+
+      <div class="pay-methods">
+        <div class="pay-label">Or pay directly via app</div>
+        <div class="pay-btns">
+          <a id="paytmBtn" href="#" class="pay-btn paytm-btn" onclick="handlePaytm(event)">
+            <div class="pay-btn-logo paytm-logo">P</div> Paytm
+          </a>
+          <a id="phonepeBtn" href="#" class="pay-btn phonepe-btn" onclick="handlePhonepe(event)">
+            <div class="pay-btn-logo phonepe-logo">Ph</div> PhonePe
+          </a>
+        </div>
+      </div>
+
+      <div class="divider">Enter UTR after payment</div>
+
+      <div class="utr-section">
+        <div class="utr-note">💡 Payment ke baad Paytm/PhonePe app mein transaction history mein UTR/Reference number milega. Woh number yahan enter karein.</div>
+        <div class="form-group">
+          <label>UTR / Transaction Number</label>
+          <input type="text" id="iUTR" placeholder="12-digit UTR number" maxlength="20"/>
+        </div>
+        <button class="cta-btn cta-gradient" onclick="verifyAndConfirm()">✔ Verify &amp; Confirm Payment</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── SUCCESS OVERLAY ───────────────────── -->
+<div class="success-overlay" id="successOverlay">
+  <div class="success-card">
+    <span class="success-emoji">🎉</span>
+    <h2>Payment Confirmed!</h2>
+    <div class="modal-plan-tag" id="successTag" style="margin:0 auto 16px;display:inline-flex">💎 EXCLUSIVE — ₹499</div>
+    <p>Aapka bundle link bhej diya gaya hai:<br/><span class="success-email-hl" id="successEmailShow"></span><br/><br/>Inbox check karein — 2 minute ke andar link aa jayega. Spam folder bhi check karein.</p>
+    <button class="back-btn" onclick="resetAll()">← Wapas Plans Pe Jaayein</button>
+  </div>
+</div>
+
+<!-- ─── TOAST ─────────────────────────────── -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ── CONFIG (CHANGE ONLY HERE) ──────────────────────────────────
+const CONFIG = {
+  upiId: 'paytm.s1wc4se@pty',
+  upiName: 'VideoHub',
+  txnRef: 'TXN-' + Math.floor(Math.random() * 9999999999999),
+  phonepeDeeplink: 'phonepe://native?data=eyJjb250YWN0Ijp7ImNiY05hbWUiOiIiLCJuaWNrTmFtZSI6IiIsInZwYSI6InBheXRtLnMxa2FzZG1AcHR5IiwidHlwZSI6IlZQQSJ9LCJwMnBQYXltZW50Q2hlY2tvdXR',
+  paytmTemplate: 'paytmmp://cash_wallet?pa=paytm.s1wc4se@pty&pn=VideoHub&am={amount}&cu=INR&tn={txn}&tr=&mc=&featuretype=money_transfer',
+};
+
+// Decode PhonePe base64 to extract VPA (for dynamic amount injection later)
+function buildPhonepeLink(amount) {
+  // Use the provided deep link but the amount is set from the PhonePe base64 param
+  // We just replace the initialAmount in the decoded payload
+  try {
+    const base64Part = CONFIG.phonepeDeeplink.split('data=')[1].split('&id=')[0];
+    const decoded = atob(decodeURIComponent(base64Part));
+    const obj = JSON.parse(decoded);
+    obj.p2pPaymentCheckoutParams.initialAmount = parseInt(amount) * 100; // in paise
+    obj.p2pPaymentCheckoutParams.note = CONFIG.txnRef;
+    const newBase64 = btoa(JSON.stringify(obj));
+    return 'phonepe://native?data=' + encodeURIComponent(newBase64) + '&id=p2ppayment';
+  } catch(e) {
+    return CONFIG.phonepeDeeplink;
+  }
+}
+
+function buildQRUrl(amount) {
+  const upiString = 'upi://pay?pa=' + encodeURIComponent(CONFIG.upiId)
+    + '&pn=' + encodeURIComponent(CONFIG.upiName)
+    + '&am=' + amount
+    + '&cu=INR'
+    + '&tn=' + encodeURIComponent(CONFIG.txnRef)
+    + '&tr=&mc=';
+  return 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(upiString);
+}
+
+function buildPaytmLink(amount) {
+  return CONFIG.paytmTemplate.replace('{amount}', amount).replace('{txn}', CONFIG.txnRef);
+}
+
+// ── STATE ──────────────────────────────────────────────────────
+let state = { plan: '', price: '', timer: null };
+
+// ── LIVE COUNTERS ──────────────────────────────────────────────
+function animateCounters() {
+  let views = 1284;
+  let purchases = 347;
+  setInterval(() => {
+    const vDelta = Math.random() > 0.5 ? 1 : -1;
+    views = Math.max(900, views + vDelta);
+    document.getElementById('viewCount').textContent = views.toLocaleString('en-IN');
+  }, 3000);
+  setInterval(() => {
+    if (Math.random() > 0.7) {
+      purchases++;
+      document.getElementById('todayBuy').textContent = purchases.toLocaleString('en-IN');
+      document.getElementById('purCount').textContent = (58420 + purchases - 347).toLocaleString('en-IN');
+    }
+  }, 8000);
+}
+animateCounters();
+
+// ── FAQ ────────────────────────────────────────────────────────
+function toggleFaq(el) {
+  el.classList.toggle('open');
+}
+
+// ── CHECKOUT FLOW ──────────────────────────────────────────────
+const planEmoji = { 'Premium':'🎬', 'Ultimate':'👑', 'Exclusive':'💎' };
+
+function openCheckout(plan, price) {
+  state.plan = plan;
+  state.price = price;
+  const tag = planEmoji[plan] + ' ' + plan.toUpperCase() + ' — ₹' + price;
+  document.getElementById('detailPlanTag').textContent = tag;
+  document.getElementById('qrPlanTag').textContent = tag;
+  document.getElementById('iName').value = '';
+  document.getElementById('iEmail').value = '';
+  document.getElementById('iPhone').value = '';
+  document.getElementById('iUTR').value = '';
+  document.getElementById('detailScreen').classList.remove('hide');
+  document.getElementById('qrScreen').classList.remove('show');
+  document.getElementById('checkoutOverlay').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCheckout() {
+  document.getElementById('checkoutOverlay').classList.remove('show');
+  document.body.style.overflow = '';
+  if (state.timer) clearInterval(state.timer);
+}
+
+function proceedToPayment() {
+  const name = document.getElementById('iName').value.trim();
+  const email = document.getElementById('iEmail').value.trim();
+  const phone = document.getElementById('iPhone').value.trim();
+  if (!name) { showToast('❌ Please enter your name'); return; }
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showToast('❌ Valid email address enter karein'); return; }
+  if (!phone || phone.length < 10) { showToast('❌ 10-digit mobile number enter karein'); return; }
+
+  document.getElementById('detailScreen').classList.add('hide');
+  document.getElementById('qrScreen').classList.add('show');
+
+  // Set QR
+  document.getElementById('qrImg').src = buildQRUrl(state.price);
+  document.getElementById('upiDisplay').textContent = CONFIG.upiId;
+
+  // Set pay buttons
+  document.getElementById('paytmBtn').href = buildPaytmLink(state.price);
+  document.getElementById('phonepeBtn').href = buildPhonepeLink(state.price);
+
+  startTimer();
+}
+
+function handlePaytm(e) {
+  e.preventDefault();
+  window.location.href = buildPaytmLink(state.price);
+}
+
+function handlePhonepe(e) {
+  e.preventDefault();
+  window.location.href = buildPhonepeLink(state.price);
+}
+
+// ── TIMER ──────────────────────────────────────────────────────
+function startTimer() {
+  if (state.timer) clearInterval(state.timer);
+  let secs = 300;
+  updateTimer(secs);
+  state.timer = setInterval(() => {
+    secs--;
+    updateTimer(secs);
+    if (secs <= 0) {
+      clearInterval(state.timer);
+      showToast('⏰ Time expired! Please try again.');
+      closeCheckout();
+    }
+  }, 1000);
+}
+
+function updateTimer(s) {
+  const m = String(Math.floor(s / 60)).padStart(2, '0');
+  const sec = String(s % 60).padStart(2, '0');
+  const el = document.getElementById('timerVal');
+  el.textContent = m + ':' + sec;
+  el.className = 'timer-val' + (s <= 60 ? ' timer-exp' : '');
+}
+
+// ── QR DOWNLOAD ────────────────────────────────────────────────
+function downloadQR() {
+  const img = document.getElementById('qrImg');
+  const canvas = document.createElement('canvas');
+  canvas.width = 200; canvas.height = 200;
+  const ctx = canvas.getContext('2d');
+  const imgEl = new Image();
+  imgEl.crossOrigin = 'anonymous';
+  imgEl.onload = () => {
+    ctx.drawImage(imgEl, 0, 0, 200, 200);
+    const a = document.createElement('a');
+    a.download = 'VideoHub-Payment-QR.png';
+    a.href = canvas.toDataURL('image/png');
+    a.click();
+    showToast('✅ QR Code saved!');
+  };
+  imgEl.onerror = () => {
+    window.open(img.src, '_blank');
+    showToast('📲 QR Code opened in new tab');
+  };
+  imgEl.src = img.src;
+}
+
+// ── COPY UPI ───────────────────────────────────────────────────
+function copyUPI() {
+  navigator.clipboard.writeText(CONFIG.upiId).then(() => {
+    const btn = document.getElementById('copyUpiBtn');
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    showToast('✅ UPI ID copied: ' + CONFIG.upiId);
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+  }).catch(() => {
+    showToast('UPI ID: ' + CONFIG.upiId);
+  });
+}
+
+// ── VERIFY ─────────────────────────────────────────────────────
+function verifyAndConfirm() {
+  const utr = document.getElementById('iUTR').value.trim();
+  if (utr.length < 6) { showToast('❌ Valid UTR number enter karein'); return; }
+
+ fbq('track', 'Purchase', {
+    value: state.price,
+    currency: 'INR'
+  });
+
+  clearInterval(state.timer);
+  const email = document.getElementById('iEmail').value.trim();
+  document.getElementById('successTag').textContent = planEmoji[state.plan] + ' ' + state.plan.toUpperCase() + ' — ₹' + state.price;
+  document.getElementById('successEmailShow').textContent = email;
+  document.getElementById('checkoutOverlay').classList.remove('show');
+  document.getElementById('successOverlay').classList.add('show');
+}
+
+function resetAll() {
+  document.getElementById('successOverlay').classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+// ── TOAST ──────────────────────────────────────────────────────
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+</script>
+</body>
+</html>
