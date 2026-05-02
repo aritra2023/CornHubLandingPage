@@ -1,6 +1,4 @@
 {
-  "buildCommand": "pnpm --filter @workspace/corn-hub run build",
-  "outputDirectory": "site",
-  "framework": null,
+  "outputDirectory": "public",
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
