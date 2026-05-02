@@ -82,6 +82,9 @@ nav{position:sticky;top:0;z-index:50;background:rgba(7,7,15,.85);backdrop-filter
 .video-wrap{position:relative;border:2.5px dashed rgba(124,58,237,.7);border-radius:14px;overflow:hidden;background:#000}
 .video-ratio{padding:75% 0 0 0;position:relative}
 .video-ratio iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+.video-controls{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);z-index:5}
+.video-play-btn{background:rgba(0,0,0,.55);border:2px solid rgba(124,58,237,.7);color:#fff;width:48px;height:48px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:17px;backdrop-filter:blur(6px);transition:background .2s}
+.video-play-btn:hover{background:rgba(124,58,237,.45)}
 .video-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,.6);transition:opacity .3s;z-index:2}
 .video-overlay.hidden{opacity:0;pointer-events:none}
 .play-circle{width:72px;height:72px;border-radius:50%;border:3px solid #fff;display:flex;align-items:center;justify-content:center;margin-bottom:14px;box-shadow:0 0 30px rgba(192,38,211,.6)}
@@ -298,7 +301,12 @@ footer strong{color:var(--text)}
     <div class="video-label">One Time Payment &bull; <span>Lifetime Enjoyment</span></div>
     <div class="video-wrap" id="videoWrap">
       <div class="video-ratio">
-        <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/1188675462?badge=0&amp;autopause=0&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Videos Bundle Premium Video Bundle"></iframe>
+        <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/1188675462?badge=0&amp;autopause=0&amp;autoplay=1&amp;muted=0&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Videos Bundle Premium Video Bundle"></iframe>
+      </div>
+      <div class="video-controls">
+        <button class="video-play-btn" id="playPauseBtn" onclick="toggleVideoPlay()">
+          <i class="fa-solid fa-pause" id="playPauseIcon"></i>
+        </button>
       </div>
     </div>
   </div>
@@ -784,10 +792,14 @@ function resetAll() {
   document.body.style.overflow = '';
 }
 
-function playVideo() {
-  document.getElementById('videoOverlay').classList.add('hidden');
+var videoPlaying = true;
+function toggleVideoPlay() {
   var iframe = document.getElementById('vimeoPlayer');
-  iframe.src = iframe.src + '&autoplay=1';
+  var icon = document.getElementById('playPauseIcon');
+  var msg = videoPlaying ? '{"method":"pause"}' : '{"method":"play"}';
+  iframe.contentWindow.postMessage(msg, 'https://player.vimeo.com');
+  icon.className = videoPlaying ? 'fa-solid fa-play' : 'fa-solid fa-pause';
+  videoPlaying = !videoPlaying;
 }
 
 function showToast(msg) {
