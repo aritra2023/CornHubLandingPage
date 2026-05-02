@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm --filter @workspace/corn-hub run build",
-  "outputDirectory": "artifacts/corn-hub/dist/public",
+  "outputDirectory": "artifacts/corn-hub/dist",
   "framework": null,
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
