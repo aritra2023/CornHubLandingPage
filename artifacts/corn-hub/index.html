@@ -25,6 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<script src="https://unpkg.com/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 <style>
 :root {
   --upi-id: paytm.s1wc4se@pty;
@@ -238,6 +239,7 @@ footer strong{color:var(--text)}
 .free-info-list{display:flex;flex-direction:column;gap:7px}
 .free-info-item{display:flex;align-items:center;gap:8px;font-size:13px;color:#c8c4e0}
 .free-info-dot{width:6px;height:6px;border-radius:50%;background:#4ade80;flex-shrink:0}
+img.emoji{height:1em;width:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;display:inline}
 </style>
 </head>
 <body>
@@ -252,7 +254,7 @@ footer strong{color:var(--text)}
     <div class="logo">Corn<span>Hub</span></div>
     <div class="nav-stats">
       <div class="stat-pill"><span class="dot-live"></span><span id="viewCount">1,284</span> Online</div>
-      <div class="stat-pill">Secure</div>
+      <div class="stat-pill">🔒 Secure</div>
     </div>
   </div>
 </nav>
@@ -260,7 +262,7 @@ footer strong{color:var(--text)}
 <!-- HERO -->
 <div class="wrap">
   <div class="hero">
-    <div class="hero-eyebrow">Biggest Sale of 2025</div>
+    <div class="hero-eyebrow">🔥 Biggest Sale of 2025</div>
     <h1>Adult Video<br/><span>Bundle Pack</span></h1>
     <p class="hero-sub">India's #1 Private Adult Content Platform.<br/>Instant delivery directly to your email 100% confidential.</p>
     <div class="trust-row">
@@ -284,7 +286,7 @@ footer strong{color:var(--text)}
     <!-- FREE -->
     <div class="plan-card" onclick="openCheckout('Free','0')">
       <div class="plan-top">
-        <div class="plan-icon-wrap icon-free">F</div>
+        <div class="plan-icon-wrap icon-free">🆓</div>
       </div>
       <div class="plan-name">FREE</div>
       <div class="plan-price-row">
@@ -303,7 +305,7 @@ footer strong{color:var(--text)}
     <!-- PREMIUM -->
     <div class="plan-card" onclick="openCheckout('Premium','199')">
       <div class="plan-top">
-        <div class="plan-icon-wrap icon-basic">P</div>
+        <div class="plan-icon-wrap icon-basic">🎬</div>
         <div class="plan-save">88% OFF</div>
       </div>
       <div class="plan-name">PREMIUM</div>
@@ -313,9 +315,9 @@ footer strong{color:var(--text)}
         <div class="plan-period">/ lifetime</div>
       </div>
       <ul class="features">
-        <li><span class="feat-check check-purple">✓</span>20,000+ Videos</li>
+        <li><span class="feat-check check-purple">✓</span>20,000+ Videos 🎥</li>
         <li><span class="feat-check check-purple">✓</span>HD Quality Content</li>
-        <li><span class="feat-check check-purple">✓</span>Instant Download</li>
+        <li><span class="feat-check check-purple">✓</span>Instant Download 🚀</li>
         <li><span class="feat-check check-purple">✓</span>Lifetime Access</li>
         <li><span class="feat-check check-purple">✓</span>Regular Updates</li>
       </ul>
@@ -324,13 +326,13 @@ footer strong{color:var(--text)}
 
     <!-- EXCLUSIVE -->
     <div class="popular-strip">
-      <div class="popular-badge">MOST POPULAR Best Value</div>
+      <div class="popular-badge">⭐ MOST POPULAR Best Value</div>
     </div>
     <div class="plan-card hot" onclick="openCheckout('Exclusive','299')">
       <div class="recommended-badge">FULL ACCESS</div>
       <div class="bestseller-badge">BESTSELLER</div>
       <div class="plan-top">
-        <div class="plan-icon-wrap icon-exc">E</div>
+        <div class="plan-icon-wrap icon-exc">💎</div>
         <div class="plan-save">80% OFF</div>
       </div>
       <div class="plan-name">EXCLUSIVE</div>
@@ -340,12 +342,12 @@ footer strong{color:var(--text)}
         <div class="plan-period">/ lifetime</div>
       </div>
       <ul class="features">
-        <li><span class="feat-check check-pink">✓</span>60,000+ Videos</li>
-        <li><span class="feat-check check-pink">✓</span>4K Ultra HD Quality</li>
-        <li><span class="feat-check check-pink">✓</span>VIP Support</li>
-        <li><span class="feat-check check-pink">✓</span>All Categories Unlocked</li>
-        <li><span class="feat-check check-pink">✓</span>Daily New Content Pack</li>
-        <li><span class="feat-check check-pink">✓</span>Bonus Content Pack</li>
+        <li><span class="feat-check check-pink">✓</span>60,000+ Videos 🔞</li>
+        <li><span class="feat-check check-pink">✓</span>4K Ultra HD Quality ✨</li>
+        <li><span class="feat-check check-pink">✓</span>VIP Support 📞</li>
+        <li><span class="feat-check check-pink">✓</span>All Categories Unlocked 🔑</li>
+        <li><span class="feat-check check-pink">✓</span>Daily New Content Pack 🌶</li>
+        <li><span class="feat-check check-pink">✓</span>Bonus Content Pack 🎁</li>
       </ul>
       <button class="plan-btn btn-gold">GET FULL ACCESS →</button>
     </div>
@@ -764,6 +766,18 @@ function showToast(msg) {
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 3000);
 }
+
+window.addEventListener('load', function() {
+  twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(m) {
+      m.addedNodes.forEach(function(n) {
+        if (n.nodeType === 1) twemoji.parse(n, { folder: 'svg', ext: '.svg' });
+      });
+    });
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+});
 </script>
 </body>
 </html>
