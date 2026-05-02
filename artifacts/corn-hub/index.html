@@ -79,7 +79,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(7,7,15,.85);backdrop-filter
 .video-section{margin-bottom:32px}
 .video-label{text-align:center;font-size:13px;font-weight:700;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px}
 .video-label span{background:linear-gradient(135deg,#c026d3,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.video-wrap{position:relative;border:2px solid rgba(192,38,211,.5);border-radius:14px;overflow:hidden;background:#000;cursor:pointer}
+.video-wrap{position:relative;border:2.5px dashed rgba(220,38,90,.75);border-radius:14px;overflow:hidden;background:#000}
 .video-ratio{padding:75% 0 0 0;position:relative}
 .video-ratio iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
 .video-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,.6);transition:opacity .3s;z-index:2}
@@ -298,11 +298,7 @@ footer strong{color:var(--text)}
     <div class="video-label">One Time Payment &bull; <span>Lifetime Enjoyment</span></div>
     <div class="video-wrap" id="videoWrap">
       <div class="video-ratio">
-        <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/1188675462?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Videos Bundle Premium Video Bundle"></iframe>
-      </div>
-      <div class="video-overlay" id="videoOverlay" onclick="playVideo()">
-        <div class="play-circle"><i class="fa-solid fa-play"></i></div>
-        <div class="click-to-play">CLICK TO PLAY</div>
+        <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/1188675462?badge=0&amp;autopause=0&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" title="Videos Bundle Premium Video Bundle"></iframe>
       </div>
     </div>
   </div>
